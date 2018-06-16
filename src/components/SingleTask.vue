@@ -28,7 +28,7 @@ export default {
   methods:{
       isEditable(){
         this.editable = true;
-        self = this
+        let self = this
         setTimeout(function(){
             self.$refs.input.focus()
         },50)   
