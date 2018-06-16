@@ -1,0 +1,97 @@
+.home{
+    h1{
+        font-size: 42px;
+        margin: 20px 0px;
+        font-weight: 600;
+    }
+    .new-task{
+        margin:30px 0px;
+        display: flex;
+        input{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: none;
+        }
+        button{
+			background-color: #222;
+            transition: all .3s linear;
+            border: 1px solid #222;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            min-width:37px;
+			i{
+				color:#fff;
+
+			}
+			&:hover{
+				background-color: #fff;
+				border: 1px solid #222;
+				& i{
+					color:#222;
+
+				}
+			}
+		}
+    }
+    .task-list{
+        .single-task{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px ;
+            border: none;
+            margin: 5px 0px;
+            border-radius: 0px;
+            input{
+               
+                border: 1px solid #666;
+             
+                     &:focus{
+                         border-color: #ccc;
+                     }
+                
+            }
+            button{
+                transition: all .3s linear;
+                margin: 0px 2px;
+                background-color: #fff;
+                border: 1px solid #666;
+                min-width: 37px;
+                text-align: center;
+                    padding: 6px 0px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                i{
+                    color: #222;
+                }
+            }
+            .done{
+
+                &:hover{
+                    border-color:#007a1e;
+                    & i{
+                        color: #007a1e;
+                    }
+                }
+            }
+            .edit{
+
+                &:hover{
+                    border-color:#ba6300;
+                    & i{
+                        color: #ba6300;
+                    }
+                }
+            }
+            .remove-task{
+                &:hover{
+                    border-color:#ba0000;
+                    & i{
+                        color: #ba0000;
+                    }
+                }
+            }
+        }
+    }
+}
